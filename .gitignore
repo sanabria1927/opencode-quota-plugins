@@ -1,0 +1,13 @@
+# Dependencias instaladas del host/entorno
+node_modules/
+
+# Logs y basura
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Secretos / configuración local
+.env
+.env.*
+auth.json
