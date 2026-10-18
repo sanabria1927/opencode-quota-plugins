@@ -1,5 +1,7 @@
 # opencode-go-usage
 
+> Parte de [`opencode-quota-plugins`](https://github.com/sanabria1927/opencode-quota-plugins) · MIT
+
 Plugin TUI de OpenCode que muestra el uso de OpenCode Go en el sidebar.
 
 ## Qué muestra

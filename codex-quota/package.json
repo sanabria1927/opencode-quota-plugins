@@ -2,8 +2,10 @@
   "name": "opencode-codex-quota",
   "version": "1.0.0",
   "private": true,
-  "description": "Muestra la cuota de Codex (ChatGPT) en el sidebar de OpenCode",
+  "description": "Show your Codex (ChatGPT) quota in the OpenCode sidebar.",
   "type": "module",
+  "license": "MIT",
+  "author": "sanabria1927",
   "main": "index.js",
   "exports": {
     ".": {
@@ -12,6 +14,37 @@
     "./tui": {
       "import": "./tui.js"
     }
+  },
+  "files": [
+    "index.js",
+    "tui.js",
+    "lib",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanabria1927/opencode-quota-plugins.git",
+    "directory": "codex-quota"
+  },
+  "bugs": {
+    "url": "https://github.com/sanabria1927/opencode-quota-plugins/issues"
+  },
+  "homepage": "https://github.com/sanabria1927/opencode-quota-plugins/tree/main/codex-quota#readme",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "quota",
+    "usage",
+    "tui",
+    "sidebar",
+    "codex",
+    "chatgpt"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/format.test.js test/usage.test.js"
   },
   "dependencies": {
     "@opentui/solid": ">=0.5.8",

@@ -1,5 +1,7 @@
 # opencode-cline-quota
 
+> Parte de [`opencode-quota-plugins`](https://github.com/sanabria1927/opencode-quota-plugins) · MIT
+
 Plugin TUI de OpenCode que muestra la cuota de ClinePass en el sidebar.
 
 ## Qué muestra

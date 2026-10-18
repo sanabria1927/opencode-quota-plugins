@@ -2,8 +2,10 @@
   "name": "opencode-go-usage",
   "version": "1.0.0",
   "private": true,
-  "description": "Muestra el uso de OpenCode Go en el sidebar de OpenCode",
+  "description": "Show your OpenCode Go quota in the OpenCode sidebar.",
   "type": "module",
+  "license": "MIT",
+  "author": "sanabria1927",
   "main": "index.js",
   "exports": {
     ".": {
@@ -12,6 +14,36 @@
     "./tui": {
       "import": "./tui.js"
     }
+  },
+  "files": [
+    "index.js",
+    "tui.js",
+    "lib",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanabria1927/opencode-quota-plugins.git",
+    "directory": "opencode-go-usage"
+  },
+  "bugs": {
+    "url": "https://github.com/sanabria1927/opencode-quota-plugins/issues"
+  },
+  "homepage": "https://github.com/sanabria1927/opencode-quota-plugins/tree/main/opencode-go-usage#readme",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "quota",
+    "usage",
+    "tui",
+    "sidebar",
+    "opencode-go"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/format.test.js test/usage.test.js test/tui.test.js"
   },
   "dependencies": {
     "@opentui/solid": ">=0.5.8",

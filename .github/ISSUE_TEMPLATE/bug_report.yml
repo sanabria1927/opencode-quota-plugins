@@ -1,0 +1,40 @@
+name: Bug report
+description: Report something that is not working as expected
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report! Please **never paste credentials, tokens or API
+        keys** — redact them.
+  - type: input
+    id: opencode-version
+    attributes:
+      label: OpenCode version
+      description: Output of `opencode --version`
+      placeholder: v2.0.32
+    validations:
+      required: true
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin
+      placeholder: opencode-go-usage / codex-quota / cline-quota
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: From `~/.local/share/opencode/log/opencode.log` (redact secrets).
+      render: shell
+    validations:
+      required: false

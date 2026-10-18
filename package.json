@@ -1,0 +1,35 @@
+{
+  "name": "opencode-quota-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sidebar quota/usage plugins for OpenCode V2: OpenCode Go, Codex (ChatGPT) and ClinePass (Cline).",
+  "type": "module",
+  "license": "MIT",
+  "author": "sanabria1927",
+  "homepage": "https://github.com/sanabria1927/opencode-quota-plugins#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanabria1927/opencode-quota-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanabria1927/opencode-quota-plugins/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "quota",
+    "usage",
+    "tui",
+    "sidebar",
+    "opencode-go",
+    "codex",
+    "cline"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "install:all": "npm install --prefix opencode-go-usage && npm install --prefix codex-quota && npm install --prefix cline-quota",
+    "test": "npm test --prefix opencode-go-usage && npm test --prefix codex-quota && npm test --prefix cline-quota"
+  }
+}
